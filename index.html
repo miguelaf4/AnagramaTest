@@ -22,7 +22,7 @@
 
     <header>
         <a href="/"><img src="img/Logo.svg" alt="Anagrama Logo"></a>
-        <img class="d-none d-sm-inline" src="img/Smile-Black.svg" alt="Smile Emoji Dark">
+        <img id="smile" class="d-none d-sm-inline" src="img/Smile-Black.svg" alt="Smile Emoji Dark"> <!-- CLICK ME FOR A SURPRISE -->
         <a class="btn btn-dark" href="/">Log in</a>
     </header>
 
@@ -59,7 +59,7 @@
                     <div id="tarjeta">
                         <div class="tarjeta-background"></div>
                         <p class="tarjeta-subtitle">Card Subititle</p>
-                        <h2 class="tarjeta-title">Card 1</h2>
+                        <h2 class="tarjeta-title">Card 2</h2>
                         <a class="btn btn-cta" href="/">Button</a>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                     <div id="tarjeta">
                         <div class="tarjeta-background"></div>
                         <p class="tarjeta-subtitle">Card Subititle</p>
-                        <h2 class="tarjeta-title">Card 1</h2>
+                        <h2 class="tarjeta-title">Card 3</h2>
                         <a class="btn btn-cta" href="/">Button</a>
                     </div>
                 </div>
@@ -83,6 +83,20 @@
         <p>© 2021 Anagrama. All Rights Reserved.</p>
     </footer>
 
+
+    <!-- Script para cambiar las variables de CSS al hacer click en el emoji del header -->
+    <script>
+
+        var smile = document.getElementById('smile');
+
+        smile.addEventListener('click', function() {
+            let root = document.documentElement;
+            root.style.setProperty('--primary', '#a4ff59');
+            root.style.setProperty('--secondary', '#4e733c');
+        });
+        
+
+    </script>
 
 </body>
 </html>
