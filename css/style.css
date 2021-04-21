@@ -156,7 +156,7 @@ header {
 
 
 .tarjeta-title {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -229,12 +229,24 @@ footer {
 
 /* TABLET/MEDIUM DEVICES */
 @media only screen and (min-width: 500px) and (max-width: 800px) {
+    #hero {
+        height: 650px;
+    }
+    
     #hero h1{
         font-size: 56px;
     }
 
+    .hero-content-wrapper {
+        top: -10%;
+    }
+    
     .tarjeta-background {
         height: 350px;
+    }
+
+    #cards {
+        padding:1rem 3rem 1rem;
     }
 }
 
